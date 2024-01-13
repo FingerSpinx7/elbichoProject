@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1018.0" styleClass="bodybg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="139.0" layoutY="124.0" prefHeight="593.0" prefWidth="947.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="537.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="502.0">
+                     <children>
+                        <Label prefHeight="55.0" prefWidth="154.0" text="Mesas" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="350.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="actualizarBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#eventAct" prefHeight="39.0" prefWidth="21.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/act5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="60.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="920.0" spacing="40.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="179.0" text="Mesa 1" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa1Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img1" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 2" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa2Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img2" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 3" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa3Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img3" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 4" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa4Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img4" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="998.0" spacing="40.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 5" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa5Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img5" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 6" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa6Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img6" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 7" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa7Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img7" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 8" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa8Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img8" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="210.0" spacing="40.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 9" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa9Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img9" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 10" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa10Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img10" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 11" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa11Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img11" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Mesa 12" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mesa12Id" mnemonicParsing="false" onAction="#eventAct" prefHeight="63.0" prefWidth="128.0" style="-fx-background-image: #41b50e;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="img12" fitHeight="77.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../application/PoolTable.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="210.0" spacing="130.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="269.0">
+                     <children>
+                        <Button fx:id="addProvBtn" mnemonicParsing="false" onAction="#eventAct" prefHeight="26.0" prefWidth="174.0" style="-fx-border-radius: 50; -fx-background-color: white;" text="Añadir proveedor">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="201.0">
+                     <children>
+                        <Button fx:id="consultBtn" mnemonicParsing="false" onAction="#eventAct" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: white;" text="Consultar cuentas">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="354.0">
+                     <children>
+                        <Button fx:id="addProdBtn" mnemonicParsing="false" onAction="#eventAct" prefHeight="35.0" prefWidth="338.0" style="-fx-background-color: white;" text="Añadir/eliminar producto a inventario">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="931.0" styleClass="bodybg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="462.0" prefWidth="815.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="79.0" prefWidth="811.0" style="-fx-border-color: white;">
+               <children>
+                  <Label prefHeight="59.0" prefWidth="466.0" text="Añadir/eliminar productos" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="815.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="394.0" spacing="4.0">
+                     <children>
+                        <Label text="Nombre producto:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="31.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtProd" prefHeight="26.0" prefWidth="151.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="378.0" spacing="5.0">
+                     <children>
+                        <Label text="Precio:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="31.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPrecio" prefHeight="26.0" prefWidth="82.0" />
+                        <ComboBox fx:id="ComboProv" prefHeight="26.0" prefWidth="170.0" promptText="Seleccione proveedor" style="-fx-background-color: #4dd2ff;">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="96.0" prefWidth="811.0">
+               <children>
+                  <Button fx:id="añadirBtn" mnemonicParsing="false" onAction="#event1" prefHeight="26.0" prefWidth="217.0" style="-fx-background-color: #00e600;" text="Añadir producto a inventario" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="340.0" prefWidth="811.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tblProductos" prefHeight="155.0" prefWidth="828.0">
+                    <columns>
+                      <TableColumn fx:id="colProd" prefWidth="356.7999954223633" text="Producto" />
+                      <TableColumn fx:id="colPrecio" prefWidth="128.79995727539062" text="Precio" />
+                        <TableColumn fx:id="colProveedor" prefWidth="307.20001220703125" text="Proveedor" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="429.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="eliminarBtn" mnemonicParsing="false" onAction="#event1" prefHeight="30.0" prefWidth="41.0" style="-fx-background-color: #F70D0D;">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/trashcan1_114647.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label text="Eliminar producto seleccionado" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="382.0">
+                     <children>
+                        <Button fx:id="regresaBtn" mnemonicParsing="false" onAction="#event1" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: #b30000;" text="Regresar" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="60.0" right="60.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" top="25.0" />
+   </padding>
+</AnchorPane>
